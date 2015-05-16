@@ -18,7 +18,7 @@ a{
 
 /*==========  GRIDS  ==========*/
 .container{
-    width: 1170px;
+    width: 97%;
     margin: 0 auto;
 }
 .row{
@@ -83,11 +83,12 @@ a{
 
 .navbar{
     overflow: hidden;
+    border-bottom: 1px solid @navbar-border;
     background-color: @navbar-background;
 }
 .navbar .brand{
     height: 50px;
-    margin-left: 20px;
+    margin-left: 1.5%;
     line-height: 50px;
     padding-left: 10px;
     padding-right: 10px;
@@ -95,12 +96,12 @@ a{
     vertical-align: middle;
 }
 .navbar .brand > a{
-    color: #FFF;
+    color: @brand-color;
     font-weight: bold;
     font-size: @font-size + 2px;
 }
 .navbar .brand > a:hover{
-    color: darken(#FFF, 5%);
+    color: lighten(@navbar-background, 70%);
 }
 .navbar .nav{
     height: 50px;
