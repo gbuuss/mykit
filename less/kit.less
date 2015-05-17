@@ -5,6 +5,7 @@ html, body{
     padding: 0;
     cursor: auto;
     line-height: 1.5;
+    color: @font-color;
     position: relative;
     font-style: normal;
     font-weight: normal;
@@ -14,7 +15,6 @@ html, body{
 a{
     text-decoration: none;
 }
-
 
 /*==========  GRIDS  ==========*/
 .container{
@@ -31,42 +31,18 @@ a{
     padding: 10px;
     box-sizing: border-box;
 }
-.col-1{
-    width: 8.33%;
-}
-.col-2{
-    width: 16.66%;
-}
-.col-3{
-    width: 24.99%;
-}
-.col-4{
-    width: 33.32%;
-}
-.col-5{
-    width: 41.65%;
-}
-.col-6{
-    width: 49.98%;
-}
-.col-7{
-    width: 58.31%;
-}
-.col-8{
-    width: 66.64%;
-}
-.col-9{
-    width: 74.97%;
-}
-.col-10{
-    width: 83.33%;
-}
-.col-11{
-    width: 91.63%;
-}
-.col-12{
-    width: 99.96%;
-}
+.col-1{  width: 8.33%;  }
+.col-2{  width: 16.66%; }
+.col-3{  width: 24.99%; }
+.col-4{  width: 33.32%; }
+.col-5{  width: 41.65%; }
+.col-6{  width: 49.98%; }
+.col-7{  width: 58.31%; }
+.col-8{  width: 66.64%; }
+.col-9{  width: 74.97%; }
+.col-10{ width: 83.33%; }
+.col-11{ width: 91.63%; }
+.col-12{ width: 99.96%; }
 
 /*==========  AUX  ==========*/
 
@@ -83,7 +59,7 @@ a{
 
 .navbar{
     overflow: hidden;
-    border-bottom: 1px solid @navbar-border;
+    border-bottom: 2px solid @navbar-border;
     background-color: @navbar-background;
 }
 .navbar .brand{
@@ -101,7 +77,7 @@ a{
     font-size: @font-size + 2px;
 }
 .navbar .brand > a:hover{
-    color: lighten(@navbar-background, 70%);
+    color: darken(@brand-color, 10%);
 }
 .navbar .nav{
     height: 50px;
@@ -119,9 +95,110 @@ a{
     display: inline-block;
 }
 .navbar .nav .left > li > a{
-    color: #FFF;
     padding: 10px;
+    color: @item-menu-color;
+    transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
 }
 .navbar .nav .left > li:hover{
-    background-color: darken(@navbar-background, 10%);
+    background-color: darken(@item-menu-color, 10%);
+    a{ color: @navbar-background; }
 }
+
+/*==========  BUTTONS  ==========*/
+.btn{
+    outline: none;
+    padding: 10px 24px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-size: @font-size + 1px;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    background-color: transparent;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+// Primary
+.btn-primary{
+    border: none;
+    color: #FFFFFF;
+    background-color: @primary;
+}
+.btn-primary:hover{
+    background-color: darken(@primary, 3%);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
+}
+.btn-primary.btn-reverse{
+    color: @primary;
+    border: 2px solid @primary;
+    background-color: transparent !important;
+}
+
+// Secondary
+.btn-secondary{
+    border: none;
+    color: @primary;
+    background-color: #FFFFFF;
+}
+.btn-secondary:hover{
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
+}
+.btn-secondary.btn-reverse{
+    color: #999;
+    border: 2px solid #999;
+    background-color: transparent !important;
+}
+
+// Information
+.btn-info{
+    border: none;
+    color: #FFFFFF;
+    background-color: @info;
+}
+.btn-info:hover{
+    background-color: darken(@info, 3%);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
+}
+.btn-info.btn-reverse{
+    color: @info;
+    border: 2px solid @info;
+    background-color: transparent !important;
+}
+
+// Danger
+.btn-danger{
+    border: none;
+    color: #FFFFFF;
+    background-color: @danger;
+}
+.btn-danger:hover{
+    background-color: darken(@danger, 3%);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
+}
+.btn-danger.btn-reverse{
+    color: @danger;
+    border: 2px solid @danger;
+    background-color: transparent !important;
+}
+
+// Warning
+.btn-warning{
+    border: none;
+    color: #FFFFFF;
+    background-color: @warning;
+}
+.btn-warning:hover{
+    background-color: darken(@warning, 3%);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
+}
+.btn-warning.btn-reverse{
+    color: @warning;
+    border: 2px solid @warning;
+    background-color: transparent !important;
+}
+
