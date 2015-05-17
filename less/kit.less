@@ -1,5 +1,25 @@
+///////// Auxiliares
+///
+///
+///
+///
+///
+///
+mark{
+    background-color: #feffe0;
+}
+///
+///
+///
+///
+///
+////////////
+
 
 @import "_variables";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700);
+
+
 html, body{
     margin: 0;
     padding: 0;
@@ -10,7 +30,7 @@ html, body{
     font-style: normal;
     font-weight: normal;
     font-size: @font-size;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+    font-family: 'Open Sans', sans-serif;
 }
 a{
     text-decoration: none;
@@ -59,32 +79,36 @@ a{
 
 .navbar{
     overflow: hidden;
-    border-bottom: 2px solid @navbar-border;
+    margin-bottom: 10px;
     background-color: @navbar-background;
+    border-bottom: 2px solid @navbar-border;
 }
 .navbar .brand{
-    height: 50px;
+    height: 60px;
     margin-left: 1.5%;
-    line-height: 50px;
+    line-height: 60px;
     padding-left: 10px;
     padding-right: 10px;
-    display: inline-block;
-    vertical-align: middle;
+    float: left;
 }
 .navbar .brand > a{
+    font-weight: 700;
     color: @brand-color;
-    font-weight: bold;
     font-size: @font-size + 2px;
+    transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
 }
 .navbar .brand > a:hover{
-    color: darken(@brand-color, 10%);
+    color: @primary;
 }
 .navbar .nav{
-    height: 50px;
+    float: left;
+    height: 60px;
     margin-left: 20px;
-    line-height: 50px;
-    display: inline-block;
-    vertical-align: middle;
+    line-height: 60px;
 }
 .navbar .nav .left{
     margin: 0;
@@ -95,17 +119,17 @@ a{
     display: inline-block;
 }
 .navbar .nav .left > li > a{
-    padding: 10px;
-    color: @item-menu-color;
+    display: block;
+    padding: 0 15px;
+    font-weight: 400;
     transition: all .3s ease;
     -o-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -webkit-transition: all .3s ease;
 }
-.navbar .nav .left > li:hover{
-    background-color: darken(@item-menu-color, 10%);
-    a{ color: @navbar-background; }
+.navbar .nav .left > li > a:hover{
+    color: @primary;
 }
 
 /*==========  BUTTONS  ==========*/
@@ -202,3 +226,11 @@ a{
     background-color: transparent !important;
 }
 
+/*==========  FORMULARIOS  ==========*/
+
+.mk-control{
+    padding: 10px 12px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid @control-border;
+}
