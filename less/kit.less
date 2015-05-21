@@ -5,8 +5,23 @@
 ///
 ///
 ///
+body{
+    background-color: #FAFAFA;
+}
 mark{
     background-color: #feffe0;
+}
+section.section-docu{
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+
+    h1{
+        border-bottom: 1px solid #EEEEEE;
+        padding-bottom: 10px;
+        margin: 0;
+    }
 }
 ///
 ///
@@ -51,6 +66,11 @@ a{
     padding: 10px;
     box-sizing: border-box;
 }
+.col-center{
+    margin: 0 auto;
+    float: none !important;
+}
+
 .col-1{  width: 8.33%;  }
 .col-2{  width: 16.66%; }
 .col-3{  width: 24.99%; }
@@ -146,6 +166,13 @@ a{
     -moz-transition: all .3s ease;
     -webkit-transition: all .3s ease;
 }
+.btn.mk-btn-rounded{
+    border-radius: 30px;
+}
+.btn.mk-btn-block{
+    width: 100%;
+    display: block;
+}
 
 // Primary
 .btn-primary{
@@ -228,9 +255,34 @@ a{
 
 /*==========  FORMULARIOS  ==========*/
 
-.mk-control{
-    padding: 10px 12px;
+.mk-form-login{
+    padding: 50px 50px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+.mk-form-login .mk-login-brand{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.mk-form-login .mk-login-brand img{
+    width: 100%;
+}
+.mk-form-group{
+    margin-bottom: 20px;
+}
+.mk-form-group .mk-control{
+    width: 100%;
     outline: none;
     border-radius: 3px;
+    padding: 10px 12px;
+    font-size: @font-size;
+    box-sizing: border-box;
     border: 1px solid @control-border;
+}
+.mk-control.mk-control-rounded{
+    border-radius: 30px;
 }

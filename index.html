@@ -34,7 +34,7 @@
             <div class="row">
                 <div class="col-9">
 
-                    <section>
+                    <section class="section-docu">
                         <h1>Barra de navegación</h1>
                         <p>Se muestra como crear una barra de navegación</p>
 
@@ -53,8 +53,10 @@
                         </div>
                     </section>
                     
-                    <section>
+                    <section class="section-docu">
                         <h1>Botones</h1>
+
+                        <h3>Botones Clasicos</h3>
                         <p>Los botones se crean aplicando dos clases <mark>.btn</mark> y <mark>.btn-'type'</mark></p>
 
                         <button class="btn btn-primary">Primario</button>
@@ -71,19 +73,42 @@
                         <button class="btn btn-info btn-reverse">Información</button>
                         <button class="btn btn-danger btn-reverse">Peligro</button>
                         <button class="btn btn-warning btn-reverse">Precaución</button>
+
+                        <h3>Botones Redondos</h3>
+                        <p>Tambien pueden ser inversos aplicando la clase <mark>.btn-reverse</mark></p>
+
+                        <button class="btn btn-primary mk-btn-rounded">Primario</button>
+                        <button class="btn btn-secondary mk-btn-rounded">Secundario</button>
+                        <button class="btn btn-info mk-btn-rounded">Información</button>
+                        <button class="btn btn-danger mk-btn-rounded">Peligro</button>
+                        <button class="btn btn-warning mk-btn-rounded">Precaución</button>
                     </section>
 
-                    <section>
+                    <section class="section-docu">
                         <h1>Formularios</h1>
-
-                        <h3>Input</h3>
                         
-                        <input type="text" name="texto" placeholder="Nombre" class="mk-control">
+                        <h3>Login</h3>
+
+                        <div class="row">
+                            <div class="col-5 col-center">
+                                <form class="mk-form-login" method="POST">
+                                    <div class="mk-login-brand">
+                                        <img src="https://goo.gl/E0IBo4">
+                                    </div>
+                                    <div class="mk-form-group">
+                                        <input type="text" name="texto" placeholder="Username" class="mk-control mk-control-rounded">
+                                    </div>
+                                    <div class="mk-form-group">
+                                        <input type="text" name="texto" placeholder="Password" class="mk-control mk-control-rounded">
+                                    </div>
+                                    <div class="mk-form-group">
+                                        <button class="btn btn-primary mk-btn-rounded mk-btn-block">Entrar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
 
                     </section>
-                </div>
-                <div class="col-3">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ipsam, neque aspernatur corporis rerum quisquam unde. In quidem, sint quae optio ullam sit, nostrum quam consequatur veniam quibusdam, exercitationem impedit consectetur omnis excepturi ratione ipsa aut. Officia, ab, aliquid inventore assumenda saepe reiciendis. Dolor quasi odio sequi fuga, nobis facilis!
                 </div>
             </div>
         </div>
