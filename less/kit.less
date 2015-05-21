@@ -284,6 +284,15 @@ a{
     font-size: @font-size;
     box-sizing: border-box;
     border: 1px solid @control-border;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.mk-form-group .mk-control:focus{
+    -webkit-box-shadow: 0 0 3px 1px rgba(0,0,0,06);
+    box-shadow: 0 0 3px 1px rgba(0,0,0,.1);
 }
 .mk-control.mk-control-rounded{
     border-radius: 30px;
