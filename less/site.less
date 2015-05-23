@@ -5,11 +5,25 @@ mark{
     background-color: #feffe0;
 }
 .sidebar{
-    height: 95%;
-    width: 300px;
+    margin: 0;
+    height: 100%;
+    width: 260px;
     position: fixed;
-    margin-top: 10px;
     overflow-y: auto;
+    list-style: none;
+    
+    li > a{
+        display: block;
+        padding: 10px;
+        color: #444;
+    }
+    li > a:hover{
+        background-color: #F3F3F3;
+    }
+    li.active a{
+        color: #FFFFFF;
+        background-color: #ef5350;
+    }
 }
 .content-right{
     background-color: #FFFFFF;
@@ -23,8 +37,10 @@ mark{
         border: 1px solid #EEEEEE;
         .preview{
             padding: 20px 10px;
-            background-color: #F7F7F9;
             border-bottom: 1px solid #EEEEEE;
+        }
+        .preview.dark{
+            background-color: #4DB6AC;
         }
     }
 }

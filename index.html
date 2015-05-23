@@ -26,12 +26,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-3">
-                    <div class="sidebar">
-                        <ul>
-                            <li><a href="#inputs">Inputs</a></li>
-                            <li><a href="#buttons">Botones</a></li>
-                        </ul>
-                    </div>
+                    <ul class="sidebar" data-mk="menu">
+                        <li class="active"><a href="#inputs">Inputs</a></li>
+                        <li><a href="#navbar">Barra de Navegación</a></li>
+                        <li><a href="#buttons">Botones</a></li>
+                    </ul>
                 </div>
                 <div class="col-9">
                     
@@ -55,7 +54,7 @@
                             
                             <h3>Invertidos</h3>
                             <div class="example">
-                                <div class="preview" data-mk="cover" data-src="img/cover_blurred.jpg">
+                                <div class="preview dark">
                                     <input type="text" name="username" class="mk-input mk-input-reverse" placeholder="Username">
                                     <input type="text" name="username" class="mk-input mk-input-rounded mk-input-reverse" placeholder="Username">    
                                     <input type="text" name="username" class="mk-input mk-input-line mk-input-reverse" placeholder="Username">    
@@ -83,7 +82,7 @@
                         </section>
 
 
-                        <section class="section-docu">
+                        <section class="section-docu" id="navbar">
                             <h1>Barra de navegación</h1>
                             <p>Se muestra como crear una barra de navegación</p>
                             
@@ -147,7 +146,7 @@
                             <h3>Invertidos</h3>
                             <p>Tambien pueden ser inversos aplicando la clase <mark>.btn-reverse</mark></p>
                             <div class="example">
-                                <div class="preview" data-mk="cover" data-src="img/cover_blurred.jpg">
+                                <div class="preview">
                                     <button class="btn btn-primary btn-reverse">Primario</button>
                                     <button class="btn btn-secondary btn-reverse">Secundario</button>
                                     <button class="btn btn-info btn-reverse">Información</button>
@@ -205,8 +204,8 @@
             SyntaxHighlighter.all();
 
             Kit.init({
-                cover: true,
-                scrollSmooth: true
+                menu: true,
+                scrollSmooth: true,
             });
         </script>
     </body>
