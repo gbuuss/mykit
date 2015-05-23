@@ -37,7 +37,7 @@ Kit = function(){
             if(smooth === "on"){
                 if(location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname){
                     var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    target     = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                     if (target.length) {
                         $('html, body').animate({
                             scrollTop: target.offset().top
@@ -55,7 +55,6 @@ Kit = function(){
                 var currLink   = $(this);
                 var refElement = $(currLink.attr("href"));
                 if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                    //$('#menu-center ul li a').removeClass("active");
                     element.find("li").removeClass("active");
                     currLink.parent().addClass("active");
                 }
