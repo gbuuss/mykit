@@ -1,0 +1,54 @@
+.navbar{
+    overflow: hidden;
+    margin-bottom: 10px;
+    background-color: @navbar-background;
+    border-bottom: 2px solid @navbar-border;
+}
+.navbar .brand{
+    height: 60px;
+    margin-left: 1.5%;
+    line-height: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+}
+.navbar .brand > a{
+    font-weight: 700;
+    color: @brand-color;
+    font-size: @font-size + 2px;
+    transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+.navbar .brand > a:hover{
+    color: @primary;
+}
+.navbar .nav{
+    float: left;
+    height: 60px;
+    margin-left: 20px;
+    line-height: 60px;
+}
+.navbar .nav .left{
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.navbar .nav .left > li{
+    display: inline-block;
+}
+.navbar .nav .left > li > a{
+    display: block;
+    padding: 0 15px;
+    font-weight: 400;
+    transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+.navbar .nav .left > li > a:hover{
+    color: @primary;
+}

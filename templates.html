@@ -7,6 +7,7 @@
         <title>Mykit</title>
         
         <link href="css/kit.min.css" rel="stylesheet">
+        <link href="css/site.min.css" rel="stylesheet">
 
         <script src="js/shCore.js"></script>
         <script src="js/shBrushXml.js"></script>
@@ -46,11 +47,7 @@
                             <div class="preview">
                                 <div class="row">
                                     <div class="col-5 col-center">
-                                        <form class="mk-form-login" method="POST">
-                                            
-                                            <!-- Agregando imagen cover a la etiqueta padre -->
-                                            <div data-mk="cover" src="img/cover_blurred.jpg"></div>
-
+                                        <form class="mk-form-login" method="POST" data-mk="coverMe" data-src="img/cover_blurred.jpg">
                                             <div class="mk-login-brand">
                                                 <img src="http://goo.gl/M7OzBU">
                                             </div>
@@ -70,11 +67,7 @@
                             <pre class="brush: html">
                                 <div class="row">
                                     <div class="col-5 col-center">
-                                        <form class="mk-form-login" method="POST">
-                                            
-                                            <!-- Agregando imagen cover a la etiqueta padre -->
-                                            <div data-mk="cover" src="img/cover_blurred.jpg"></div>
-
+                                        <form class="mk-form-login" method="POST" data-mk="coverMe" data-src="img/cover_blurred.jpg">
                                             <div class="mk-login-brand">
                                                 <img src="http://goo.gl/M7OzBU">
                                             </div>
@@ -113,7 +106,10 @@
         <script src="js/kit.js"></script>
         <script>
             SyntaxHighlighter.all();
-            Kit.init();
+            
+            Kit.init({
+                cover: true
+            });
         </script>
     </body>
 </html>
