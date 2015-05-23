@@ -22,171 +22,168 @@
         <![endif]-->
     </head>
     <body>
-
-        <div class="navbar">
-            <div class="brand">
-                <a href="">BRAND</a>
-            </div>
-            <section class="nav">
-                <ul class="left">
-                    <li><a href="index.html">ELEMENTOS</a></li>
-                    <li><a href="templates.html">PLANTILLAS</a></li>
-                </ul>
-            </section>
-        </div>
         
         <div class="container">
             <div class="row">
+                <div class="col-3">
+                    <div class="sidebar">
+                        <ul>
+                            <li><a href="#inputs">Inputs</a></li>
+                            <li><a href="#buttons">Botones</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="col-9">
                     
-
-                    <section class="section-docu">
-                        <h1>Inputs</h1>
+                    <div class="content-right">
+                        <section class="section-docu" id="inputs">
+                            <h1>Inputs</h1>
+                                
+                            <h3>Clasicos</h3>
+                            <div class="example">
+                                <div class="preview">
+                                    <input type="text" name="username" class="mk-input" placeholder="Username">
+                                    <input type="text" name="username" class="mk-input mk-input-rounded" placeholder="Username">    
+                                    <input type="text" name="username" class="mk-input mk-input-line" placeholder="Username">    
+                                </div>
+                                <pre class="brush: html">
+                                    <input type="text" name="username" class="mk-input" placeholder="Username">
+                                    <input type="text" name="username" class="mk-input mk-input-rounded" placeholder="Username">
+                                    <input type="text" name="username" class="mk-input mk-input-line" placeholder="Username">    
+                                </pre>
+                            </div>
                             
-                        <h3>Clasicos</h3>
-                        <div class="example">
-                            <div class="preview">
-                                <input type="text" name="username" class="mk-input" placeholder="Username">
-                                <input type="text" name="username" class="mk-input mk-input-rounded" placeholder="Username">    
-                                <input type="text" name="username" class="mk-input mk-input-line" placeholder="Username">    
+                            <h3>Invertidos</h3>
+                            <div class="example">
+                                <div class="preview" data-mk="cover" data-src="img/cover_blurred.jpg">
+                                    <input type="text" name="username" class="mk-input mk-input-reverse" placeholder="Username">
+                                    <input type="text" name="username" class="mk-input mk-input-rounded mk-input-reverse" placeholder="Username">    
+                                    <input type="text" name="username" class="mk-input mk-input-line mk-input-reverse" placeholder="Username">    
+                                </div>
+                                <pre class="brush: html">
+                                    <input type="text" name="username" class="mk-input mk-input-reverse" placeholder="Username">
+                                    <input type="text" name="username" class="mk-input mk-input-rounded mk-input-reverse" placeholder="Username">
+                                    <input type="text" name="username" class="mk-input mk-input-line mk-input-reverse" placeholder="Username">    
+                                </pre>
                             </div>
-                            <pre class="brush: html">
-                                <input type="text" name="username" class="mk-input" placeholder="Username">
-                                <input type="text" name="username" class="mk-input mk-input-rounded" placeholder="Username">
-                                <input type="text" name="username" class="mk-input mk-input-line" placeholder="Username">    
-                            </pre>
-                        </div>
+
+                            <h3>Efectos ante el foco</h3>
+                            <div class="example">
+                                <div class="preview">
+                                    <input type="text" name="username" class="mk-input mk-input-boom" placeholder="Username">
+                                    <input type="text" name="username" class="mk-input mk-input-rounded mk-input-boom" placeholder="Username">    
+                                    <input type="text" name="username" class="mk-input mk-input-line mk-input-boom" placeholder="Username">    
+                                </div>
+                                <pre class="brush: html">
+                                    <input type="text" name="username" class="mk-input mk-input-boom" placeholder="Username">
+                                    <input type="text" name="username" class="mk-input mk-input-rounded mk-input-boom" placeholder="Username">
+                                    <input type="text" name="username" class="mk-input mk-input-line mk-input-boom" placeholder="Username">    
+                                </pre>
+                            </div>
+                        </section>
+
+
+                        <section class="section-docu">
+                            <h1>Barra de navegación</h1>
+                            <p>Se muestra como crear una barra de navegación</p>
+                            
+                            <div class="example">
+                                <div class="preview">
+                                    <div class="navbar">
+                                        <div class="brand">
+                                            <a href="">Brand</a>
+                                        </div>
+                                        <section class="nav">
+                                            <ul class="left">
+                                                <li><a href="">MENU 1</a></li>
+                                                <li><a href="">MENU 2</a></li>
+                                                <li><a href="">MENU 3</a></li>
+                                                <li><a href="">MENU 4</a></li>
+                                            </ul>
+                                        </section>
+                                    </div>  
+                                </div>
+                                <pre class="brush: html">
+                                    <div class="navbar">
+                                        <div class="brand">
+                                            <a href="">Brand</a>
+                                        </div>
+                                        <section class="nav">
+                                            <ul class="left">
+                                                <li><a href="">MENU 1</a></li>
+                                                <li><a href="">MENU 2</a></li>
+                                                <li><a href="">MENU 3</a></li>
+                                                <li><a href="">MENU 4</a></li>
+                                            </ul>
+                                        </section>
+                                    </div>                    
+                                </pre>
+                            </div>
+
+                        </section>
                         
-                        <h3>Invertidos</h3>
-                        <div class="example">
-                            <div class="preview" data-mk="cover" data-src="img/cover_blurred.jpg">
-                                <input type="text" name="username" class="mk-input mk-input-reverse" placeholder="Username">
-                                <input type="text" name="username" class="mk-input mk-input-rounded mk-input-reverse" placeholder="Username">    
-                                <input type="text" name="username" class="mk-input mk-input-line mk-input-reverse" placeholder="Username">    
+                        <section class="section-docu" id="buttons">
+                            <h1>Botones</h1>
+
+                            <h3>Clasicos</h3>
+                            <p>Los botones se crean aplicando dos clases <mark>.btn</mark> y <mark>.btn-'type'</mark></p>
+                            <div class="example">
+                                <div class="preview">
+                                    <button class="btn btn-primary">Primario</button>
+                                    <button class="btn btn-secondary">Secundario</button>
+                                    <button class="btn btn-info">Información</button>
+                                    <button class="btn btn-danger">Peligro</button>
+                                    <button class="btn btn-warning">Precaución</button>
+                                </div>
+                                <pre class="brush: html">
+                                    <button class="btn btn-primary">Primario</button>
+                                    <button class="btn btn-secondary">Secundario</button>
+                                    <button class="btn btn-info">Información</button>
+                                    <button class="btn btn-danger">Peligro</button>
+                                    <button class="btn btn-warning">Precaución</button>
+                                </pre>
                             </div>
-                            <pre class="brush: html">
-                                <input type="text" name="username" class="mk-input mk-input-reverse" placeholder="Username">
-                                <input type="text" name="username" class="mk-input mk-input-rounded mk-input-reverse" placeholder="Username">
-                                <input type="text" name="username" class="mk-input mk-input-line mk-input-reverse" placeholder="Username">    
-                            </pre>
-                        </div>
 
-                        <h3>Efectos ante el foco</h3>
-                        <div class="example">
-                            <div class="preview">
-                                <input type="text" name="username" class="mk-input mk-input-boom" placeholder="Username">
-                                <input type="text" name="username" class="mk-input mk-input-rounded mk-input-boom" placeholder="Username">    
-                                <input type="text" name="username" class="mk-input mk-input-line mk-input-boom" placeholder="Username">    
+                            <h3>Invertidos</h3>
+                            <p>Tambien pueden ser inversos aplicando la clase <mark>.btn-reverse</mark></p>
+                            <div class="example">
+                                <div class="preview" data-mk="cover" data-src="img/cover_blurred.jpg">
+                                    <button class="btn btn-primary btn-reverse">Primario</button>
+                                    <button class="btn btn-secondary btn-reverse">Secundario</button>
+                                    <button class="btn btn-info btn-reverse">Información</button>
+                                    <button class="btn btn-danger btn-reverse">Peligro</button>
+                                    <button class="btn btn-warning btn-reverse">Precaución</button>
+                                </div>
+                                <pre class="brush: html">
+                                    <button class="btn btn-primary btn-reverse">Primario</button>
+                                    <button class="btn btn-secondary btn-reverse">Secundario</button>
+                                    <button class="btn btn-info btn-reverse">Información</button>
+                                    <button class="btn btn-danger btn-reverse">Peligro</button>
+                                    <button class="btn btn-warning btn-reverse">Precaución</button>
+                                </pre>
                             </div>
-                            <pre class="brush: html">
-                                <input type="text" name="username" class="mk-input mk-input-boom" placeholder="Username">
-                                <input type="text" name="username" class="mk-input mk-input-rounded mk-input-boom" placeholder="Username">
-                                <input type="text" name="username" class="mk-input mk-input-line mk-input-boom" placeholder="Username">    
-                            </pre>
-                        </div>
-                    </section>
 
-
-                    <section class="section-docu">
-                        <h1>Barra de navegación</h1>
-                        <p>Se muestra como crear una barra de navegación</p>
-                        
-                        <div class="example">
-                            <div class="preview">
-                                <div class="navbar">
-                                    <div class="brand">
-                                        <a href="">Brand</a>
-                                    </div>
-                                    <section class="nav">
-                                        <ul class="left">
-                                            <li><a href="">MENU 1</a></li>
-                                            <li><a href="">MENU 2</a></li>
-                                            <li><a href="">MENU 3</a></li>
-                                            <li><a href="">MENU 4</a></li>
-                                        </ul>
-                                    </section>
-                                </div>  
+                            <h3>Botones Redondos</h3>
+                            <p>Tambien pueden ser inversos aplicando la clase <mark>.btn-reverse</mark></p>
+                            <div class="example">
+                                <div class="preview">
+                                    <button class="btn btn-primary mk-btn-rounded">Primario</button>
+                                    <button class="btn btn-secondary mk-btn-rounded">Secundario</button>
+                                    <button class="btn btn-info mk-btn-rounded">Información</button>
+                                    <button class="btn btn-danger mk-btn-rounded">Peligro</button>
+                                    <button class="btn btn-warning mk-btn-rounded">Precaución</button>
+                                </div>
+                                <pre class="brush: html">
+                                    <button class="btn btn-primary mk-btn-rounded">Primario</button>
+                                    <button class="btn btn-secondary mk-btn-rounded">Secundario</button>
+                                    <button class="btn btn-info mk-btn-rounded">Información</button>
+                                    <button class="btn btn-danger mk-btn-rounded">Peligro</button>
+                                    <button class="btn btn-warning mk-btn-rounded">Precaución</button>
+                                </pre>
                             </div>
-                            <pre class="brush: html">
-                                <div class="navbar">
-                                    <div class="brand">
-                                        <a href="">Brand</a>
-                                    </div>
-                                    <section class="nav">
-                                        <ul class="left">
-                                            <li><a href="">MENU 1</a></li>
-                                            <li><a href="">MENU 2</a></li>
-                                            <li><a href="">MENU 3</a></li>
-                                            <li><a href="">MENU 4</a></li>
-                                        </ul>
-                                    </section>
-                                </div>                    
-                            </pre>
-                        </div>
-
-                    </section>
-                    
-                    <section class="section-docu">
-                        <h1>Botones</h1>
-
-                        <h3>Clasicos</h3>
-                        <p>Los botones se crean aplicando dos clases <mark>.btn</mark> y <mark>.btn-'type'</mark></p>
-                        <div class="example">
-                            <div class="preview">
-                                <button class="btn btn-primary">Primario</button>
-                                <button class="btn btn-secondary">Secundario</button>
-                                <button class="btn btn-info">Información</button>
-                                <button class="btn btn-danger">Peligro</button>
-                                <button class="btn btn-warning">Precaución</button>
-                            </div>
-                            <pre class="brush: html">
-                                <button class="btn btn-primary">Primario</button>
-                                <button class="btn btn-secondary">Secundario</button>
-                                <button class="btn btn-info">Información</button>
-                                <button class="btn btn-danger">Peligro</button>
-                                <button class="btn btn-warning">Precaución</button>
-                            </pre>
-                        </div>
-
-                        <h3>Invertidos</h3>
-                        <p>Tambien pueden ser inversos aplicando la clase <mark>.btn-reverse</mark></p>
-                        <div class="example">
-                            <div class="preview" data-mk="cover" data-src="img/cover_blurred.jpg">
-                                <button class="btn btn-primary btn-reverse">Primario</button>
-                                <button class="btn btn-secondary btn-reverse">Secundario</button>
-                                <button class="btn btn-info btn-reverse">Información</button>
-                                <button class="btn btn-danger btn-reverse">Peligro</button>
-                                <button class="btn btn-warning btn-reverse">Precaución</button>
-                            </div>
-                            <pre class="brush: html">
-                                <button class="btn btn-primary btn-reverse">Primario</button>
-                                <button class="btn btn-secondary btn-reverse">Secundario</button>
-                                <button class="btn btn-info btn-reverse">Información</button>
-                                <button class="btn btn-danger btn-reverse">Peligro</button>
-                                <button class="btn btn-warning btn-reverse">Precaución</button>
-                            </pre>
-                        </div>
-
-                        <h3>Botones Redondos</h3>
-                        <p>Tambien pueden ser inversos aplicando la clase <mark>.btn-reverse</mark></p>
-                        <div class="example">
-                            <div class="preview">
-                                <button class="btn btn-primary mk-btn-rounded">Primario</button>
-                                <button class="btn btn-secondary mk-btn-rounded">Secundario</button>
-                                <button class="btn btn-info mk-btn-rounded">Información</button>
-                                <button class="btn btn-danger mk-btn-rounded">Peligro</button>
-                                <button class="btn btn-warning mk-btn-rounded">Precaución</button>
-                            </div>
-                            <pre class="brush: html">
-                                <button class="btn btn-primary mk-btn-rounded">Primario</button>
-                                <button class="btn btn-secondary mk-btn-rounded">Secundario</button>
-                                <button class="btn btn-info mk-btn-rounded">Información</button>
-                                <button class="btn btn-danger mk-btn-rounded">Peligro</button>
-                                <button class="btn btn-warning mk-btn-rounded">Precaución</button>
-                            </pre>
-                        </div>
-                        
-                    </section>
+                            
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>
@@ -206,9 +203,10 @@
         <script src="js/kit.js"></script>
         <script>
             SyntaxHighlighter.all();
-            
+
             Kit.init({
-                cover: true
+                cover: true,
+                scrollSmooth: true
             });
         </script>
     </body>
