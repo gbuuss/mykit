@@ -1,0 +1,46 @@
+.mk-input{
+    width: 100%;
+    outline: none;
+    border-radius: 3px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    font-size: @font-size;
+    box-sizing: border-box;
+    border: 1px solid @control-border;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.mk-input.mk-input-reverse{
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    background-color: transparent;
+}
+.mk-input.mk-input-boom{
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+.mk-input.mk-input-boom:focus{
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+.mk-input.mk-input-reverse::-webkit-input-placeholder{
+    color: #FFFFFF;
+}
+.mk-input.mk-input-rounded{
+    border-radius: 30px;
+}
+.mk-input.mk-input-line{
+    border-top: none;
+    background-color: transparent;
+    border-left: none;
+    border-right: none;
+}
