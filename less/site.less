@@ -11,7 +11,7 @@ mark{
     position: fixed;
     overflow-y: auto;
     list-style: none;
-    
+
     li > a{
         display: block;
         padding: 10px;
@@ -20,9 +20,19 @@ mark{
     li > a:hover{
         background-color: #F3F3F3;
     }
-    li.active a{
+    li.active > a{
         color: #FFFFFF;
-        background-color: #ef5350;
+        background-color: #42a5f5;
+    }
+
+    li > ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li > a{
+            padding-left: 20px;
+        }
     }
 }
 .content-right{
@@ -40,7 +50,7 @@ mark{
             border-bottom: 1px solid #EEEEEE;
         }
         .preview.dark{
-            background-color: #4DB6AC;
+            background-color: #F5F2F0;
         }
     }
 }

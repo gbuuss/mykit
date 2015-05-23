@@ -48,7 +48,7 @@ Kit = function(){
         var element = $('[data-mk="menu"]');
         element.find('a').on("click", function(){
             element.find("li").removeClass("active");
-            $(this).parents("li").addClass("active");
+            $(this).parent().addClass("active");
         });
     }
 
